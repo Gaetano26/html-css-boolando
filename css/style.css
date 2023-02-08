@@ -26,7 +26,7 @@
    display: flex;
    flex-flow: row wrap;
    justify-content: space-between;   
-   padding:10px;
+   padding:15px;
 }
 
 #logo {
@@ -61,4 +61,22 @@ a {
 .container-loghi {
    padding: 5px;
    color: white;
+}
+
+.card {
+    max-width: 100%;
+    height: 520px;
+    
+}
+
+p {
+  font-size: 12px;
+}
+
+.red {
+    color: var(--brg-sconto);
+}
+
+.black {
+    color: black;
 }
