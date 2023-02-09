@@ -1,9 +1,11 @@
+/*creazione regole generali*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 
+  /*creazione root*/
 }
 :root {
   --brg-nav: #FF6900;
@@ -12,18 +14,16 @@
   --brg-sost: #008000;
 }
 
-.bordo {
-    border: 1px solid black;
-}
-
-
+  /*creazione + fixed e z-index nav*/  
 .brg1 {
     background-color: var(--brg-nav);
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 99;
-    
+ 
+ 
+  /*creazione e modifica layout nav*/     
 }
 .container-2 {
     max-width: 1200px;
@@ -32,14 +32,17 @@
    flex-flow: row wrap;
    justify-content: space-between;   
    padding:15px;
+   color: white;
 }
 
+/*ridimensionamento logo nav*/
 #logo {
   max-width: 120px;
     max-height: 220px;
     
 }
 
+/*creazione e modifica layout lista nav*/
 .lista {
     display: flex;
     flex-flow: row wrap;
@@ -48,16 +51,25 @@
     
 }
 
+/*modifica dimensione container loghi nav + modifica colore loghi*/
+.container-loghi {
+   padding: 5px;
+   color: white;
+}
+
+/*modifica margin top main*/
 main {
     margin-top: 40px;
 }
 
+/*modifica posizionamento text decoration e color di tutte le a*/
 a {
     padding-left: 5px;
     text-decoration: none;
     color: white;
 }
 
+/*creazione e modifiche flex contenitore generale 1 del main*/
 .container {
    display: flex;
    margin: 0 auto;
@@ -67,10 +79,7 @@ a {
    padding: 10px;
 }
 
-.container-loghi {
-   padding: 5px;
-   color: white;
-}
+/*modifiche generali layout + position absolute logo Heart*/
 .absolute-h {
     position: absolute;
     top:10px;
@@ -82,6 +91,7 @@ a {
     font-size: 20px;
 }
 
+/*modifiche generali layout + position absolute segnale di sconto*/
 .sconto {
     position: absolute;
     bottom:100px;
@@ -95,6 +105,7 @@ a {
     
 }
 
+/*modifiche generali layout + position absolute segnale di sostenibilità*/
 .sostenibilità {
     position: absolute;
     bottom:100px;
@@ -107,6 +118,8 @@ a {
     text-align: center;
 
 }
+
+/*modifiche generali layout + position absolute segnale di sostenibilità card 6*/
 .sostenibilità2 {
     position: absolute;
     bottom:100px;
@@ -119,12 +132,14 @@ a {
     text-align: center;
 }
 
+/*modifiche dimensioni immagini 1 all'interno di tutte le card + display block*/
 .img1 {
     width: 100%;
     height: 500px;
     display: block;
 }
 
+/*modifiche dimensioni immagini 2 all'interno di tutte le card + display none*/
 .img2 {
     width: 100%;
     height: 500px;
@@ -132,38 +147,70 @@ a {
 
 }
 
+/*modifica padding top di tutte le sezioni*/
 .relative {
-  padding-top: 15px;
+
+  padding-top: 20px;
     
 }
 
+/*modifica margin + position relative di tutti i contenitori genitori card*/
 .card {
     position: relative;
     margin: 10px;
 }
 
-
+/*hover di tutte le immagini 1 all'interno di tutte le card*/
 .card:hover .img1 {
      display: none;
 }
 
+/*hover di tutte le immagini 2 all'interno di tutte le card*/
 .card:hover .img2 {
-    display: block;
-    
-    
-    
-    
+    display: block;   
 }
 
-
+/*modifica di tutti i paragrafi senza classi o id all'interno del sito*/
 p {
   font-size: 12px;
 }
 
+/*modifica colore di parti di paragrafi indicanti il prezzo attuale*/
 .red {
     color: var(--brg-sconto);
 }
 
+/*modifica colore di parti di paragrafi indicanti il prezzo tagliato*/
 .black {
     color: black;
+}
+
+/*modifiche generali footer*/
+.bgr-ft {
+    background-color: var(--brg-footer);
+    margin-top: 20px;
+    height: 100px;
+    padding-left: 3%;
+    
+    
+}
+
+/*modifica dimensione paragrafo footer*/
+.p-ft {
+    font-size: 18px;
+    
+
+}
+
+/*modifica posizionamento degli span*/
+span {
+    padding-left: 4px;
+}
+
+/*modifica dimensione e posizionamento paragrafo sopra i loghi footer*/
+#align {
+    
+    font-size: 13px;
+    text-align: center;
+
 }
